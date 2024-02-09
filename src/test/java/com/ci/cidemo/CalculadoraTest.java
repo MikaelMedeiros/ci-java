@@ -19,6 +19,6 @@ class CalculadoraTest {
     void deveSomar() {
 
         var result = calculadora.somar(BigDecimal.TEN, BigDecimal.TEN);
-        Assertions.assertTrue(result.equals(new BigDecimal(20)));
+        Assertions.assertEquals(result, new BigDecimal(20));
     }
 }
