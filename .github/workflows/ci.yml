@@ -24,8 +24,8 @@ jobs:
     - name: Listar conteúdo do diretório target
       run: ls -l target/
 
-    - name: Listar conteúdo do diretório Workspace do github
-      run: ls -l $GITHUB_WORKSPACE/target/
+    - name: Permitir acesso ao .jar gerado
+      run: chmod 777 target/ci-demo-0.0.1.jar
 
     - name: Build and push
       id: docker_build
