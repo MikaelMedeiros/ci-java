@@ -24,9 +24,6 @@ jobs:
     - name: Listar conteúdo do diretório target
       run: ls -l target/
 
-    - name: Copiar arquivo JAR para dentro do contexto de construção do Docker
-      run: cp target/*.jar $GITHUB_WORKSPACE/target
-
     - name: Listar conteúdo do diretório Workspace do github
       run: ls -l $GITHUB_WORKSPACE/target/
 
